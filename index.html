@@ -119,6 +119,22 @@
                 </section>
 
                 <section>
+                    <h2 class="text-primary">El Problema: ¿Para qué crear algo nuevo? 🤯</h2>
+                    <p class="fragment text-secondary">La pesadilla de las interfaces masivas</p>
+                    <ul>
+                        <li class="fragment">Interfaces con <strong>miles de registros</strong> moviéndose a la vez.</li>
+                        <li class="fragment">Necesidad de carga ultra rápida (bajo peso en KB).</li>
+                        <li class="fragment">Integración estricta con el backend (Python y XML).</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 1rem; border-left: 5px solid var(--odoo-gold); padding-left: 1rem; text-align: left;">
+                        <small><em>Librerías como React o Vue son excelentes, pero añadían una capa de complejidad y peso innecesario a la arquitectura nativa de Odoo. Había que crear una solución a la medida.</em></small>
+                    </p>
+                    <aside class="notes">
+                        [Minuto 8] Aquí respondemos al "¿Para qué?". Odoo necesitaba rendimiento extremo sin engordar el sistema ni pelear con su propio backend. Por eso nace OWL.
+                    </aside>
+                </section>
+
+                <section>
                     <section>
                         <h2>El Motor Secreto: <span class="text-primary">OWL</span></h2>
                         <p>Odoo Web Library</p>
@@ -132,9 +148,31 @@
                             <li class="fragment"><strong>3. Reactividad:</strong> Sistema de Hooks propio para actualizar el DOM.</li>
                         </ul>
                         <aside class="notes">
-                            [Minuto 10] Odoo no quería depender de React o Vue para no engordar el sistema, y diseñó OWL con estos tres pilares.
+                            [Minuto 10] Odoo diseñó OWL con estos tres pilares para mantener el ecosistema ligero y rápido.
                         </aside>
                     </section>
+                </section>
+
+                <section>
+                    <h2 class="text-secondary">OWL en el mundo real ✨</h2>
+                    <p>Impactando la operación diaria de miles de empresas.</p>
+                    <div style="display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem;">
+                        <div class="fragment" style="width: 30%; background: #f8f9fa; padding: 15px; border-radius: 10px; border-top: 5px solid var(--odoo-secondary);">
+                            <h4 class="text-primary">Punto de Venta</h4>
+                            <p style="font-size: 0.8em;">Cajas registradoras que funcionan offline y sin interrupciones.</p>
+                        </div>
+                        <div class="fragment" style="width: 30%; background: #f8f9fa; padding: 15px; border-radius: 10px; border-top: 5px solid var(--odoo-secondary);">
+                            <h4 class="text-primary">Dashboards</h4>
+                            <p style="font-size: 0.8em;">Gráficos gerenciales que se actualizan en tiempo real.</p>
+                        </div>
+                        <div class="fragment" style="width: 30%; background: #f8f9fa; padding: 15px; border-radius: 10px; border-top: 5px solid var(--odoo-secondary);">
+                            <h4 class="text-primary">Tableros Ágiles</h4>
+                            <p style="font-size: 0.8em;">Gestión visual de procesos complejos, justo como veremos hoy.</p>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        [Minuto 12] El enfoque vivencial. Menciona que esto es lo que permite que un cajero de súper no se detenga si se va internet, o que un gerente vea ventas en vivo.
+                    </aside>
                 </section>
 
                 <section data-auto-animate>
@@ -158,7 +196,7 @@
                             </div>`;
                     </code></pre>
                     <aside class="notes">
-                        [Minuto 13] Aquí pueden ver la sintaxis pura. Importamos Component y el Hook useState. Y usamos `xml` para definir cómo se ve (QWeb). Fíjense en el `t-esc`, ¡esa es la magia de Odoo!
+                        [Minuto 14] Aquí pueden ver la sintaxis pura. Importamos Component y el Hook useState. Y usamos `xml` para definir cómo se ve (QWeb). Fíjense en el `t-esc`, ¡esa es la magia de Odoo!
                     </aside>
                 </section>
 
@@ -174,7 +212,7 @@
                         </ul>
                     </div>
                     <aside class="notes">
-                        [Minuto 16 al 25] **[ACCIÓN: PRESIONA 'B', VE A VS CODE Y AL NAVEGADOR]**. 
+                        [Minuto 16 al 25] **[ACCIÓN: PRESIONA 'B', VE A VS CODE Y AL NAVEGADOR a kanban.cesarjsantacruz.com]**. 
                         Aquí muestro el proyecto de Kanban funcionando, explico cómo los componentes se comunican. Este es el corazón de la charla.
                     </aside>
                 </section>
